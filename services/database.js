@@ -6,6 +6,9 @@ const pool = new Pool({
   password: "STfsNXFOMJqt1KbY6zYkwLJclz98vN3A",
   database: "ecommercedb_ugp7",
   port: 5432,
+  ssl: {
+    rejectUnauthorized: false, // This allows self-signed certificates, can be true if using a verified certificate
+  },
 });
 
 module.exports = {
