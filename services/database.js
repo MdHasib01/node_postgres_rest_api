@@ -1,13 +1,13 @@
 const { Pool } = require("pg");
 
 const pool = new Pool({
-  host: "dpg-csbkritds78s73b9hhm0-a.oregon-postgres.render.com",
-  user: "ecommercedb_ugp7_user",
-  password: "STfsNXFOMJqt1KbY6zYkwLJclz98vN3A",
-  database: "ecommercedb_ugp7",
-  port: 5432,
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASSWORD,
+  database: process.env.DB_NAME,
+  port: process.env.DB_PORT,
   ssl: {
-    rejectUnauthorized: false, // This allows self-signed certificates, can be true if using a verified certificate
+    rejectUnauthorized: false,
   },
 });
 
