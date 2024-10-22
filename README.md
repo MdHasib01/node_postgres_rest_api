@@ -1,7 +1,4 @@
-# REST API with Node.js and PostgreSQL
-
-Build a complete products REST API with Node.js, Express and PostgreSQL, using the node-postgres (pg) module.
-
+# Node.js Postgres REST API
 ### Version: 1.0.0
 
 ### Usage
@@ -14,11 +11,6 @@ $ npm install
 $ npm start
 ```
 
-Here’s the API documentation with proper alignment, formatted for a GitHub `README.md` file:
-
-```md
-# Node.js Postgres REST API
-
 **Live URL:** [https://node-postgres-rest-api.onrender.com](https://node-postgres-rest-api.onrender.com)
 
 This API provides endpoints for managing categories and products. Below is a list of the available routes and the required payloads for each request.
@@ -29,6 +21,7 @@ This API provides endpoints for managing categories and products. Below is a lis
 - **Method:** `GET`
 - **URL:** `{BASE_URL}/categories`
 - **Description:** Retrieve a list of all categories.
+
 
 ### POST Create a New Category
 - **Method:** `POST`
@@ -59,8 +52,6 @@ This API provides endpoints for managing categories and products. Below is a lis
 - **Method:** `DELETE`
 - **URL:** `{BASE_URL}/categories/:id`
 - **Description:** Delete the category with the specified ID.
-
----
 
 ## Products Route
 
@@ -109,6 +100,3 @@ This API provides endpoints for managing categories and products. Below is a lis
 - **Method:** `DELETE`
 - **URL:** `{BASE_URL}/products/:id`
 - **Description:** Delete the product with the specified ID.
-```
-
-This version provides a clear and well-structured layout for API routes, including details for each method, URL, payloads, and descriptions, ready for a `README.md` on GitHub. Let me know if you need any adjustments!
